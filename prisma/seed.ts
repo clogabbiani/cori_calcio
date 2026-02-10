@@ -50,8 +50,8 @@ async function main() {
   const premierLeague = await prisma.league.upsert({
     where: { slug: 'premier-league' },
     update: {},
-    create: {
-      name: 'Premier League',
+    create: { 
+      name: 'Premier League', 
       slug: 'premier-league',
       countryId: england.id
     },
@@ -60,8 +60,8 @@ async function main() {
   const laLiga = await prisma.league.upsert({
     where: { slug: 'la-liga' },
     update: {},
-    create: {
-      name: 'La Liga',
+    create: { 
+      name: 'La Liga', 
       slug: 'la-liga',
       countryId: spain.id
     },
@@ -70,8 +70,8 @@ async function main() {
   const serieA = await prisma.league.upsert({
     where: { slug: 'serie-a' },
     update: {},
-    create: {
-      name: 'Serie A',
+    create: { 
+      name: 'Serie A', 
       slug: 'serie-a',
       countryId: italy.id
     },
@@ -80,15 +80,15 @@ async function main() {
   const brasileirao = await prisma.league.upsert({
     where: { slug: 'brasileirao' },
     update: {},
-    create: {
-      name: 'Brasileirão',
+    create: { 
+      name: 'Brasileirão', 
       slug: 'brasileirao',
       countryId: brazil.id
     },
   })
 
   // Teams & Songs
-
+  
   // Liverpool
   const liverpool = await prisma.team.upsert({
     where: { slug: 'liverpool' },

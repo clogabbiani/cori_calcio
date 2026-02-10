@@ -47,10 +47,10 @@ export default async function AdminDashboard() {
                     <span className="flex items-center gap-1">Team: <b className="text-white">{submission.team.name}</b></span>
                     <span className="flex items-center gap-1">Submitted by: <b className="text-white">{submission.user.name || submission.user.email}</b></span>
                   </div>
-                  <a
-                    href={submission.videoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <a 
+                    href={submission.videoUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
                     className="inline-flex items-center gap-2 text-green-500 text-sm font-bold hover:underline"
                   >
                     Preview Link <ExternalLink size={14} />
